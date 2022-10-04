@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/grayText"
+    tools:context="app.makingfight.gymapp.ChatActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/img"
+        android:scaleType="centerCrop"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:background="@color/black"
+            android:theme="@style/toolbarName"
+            android:layout_width="match_parent"
+
+            android:layout_height="?actionBarSize"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recicleViewMessages"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:gravity="center"
+            android:background="@color/black"
+
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="60dp"
+            >
+            <EditText
+                android:id="@+id/editextMessge"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:background="@drawable/roundedinputs"
+                android:maxLines="1"
+                android:hint="Escribe un mensaje"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+
+                android:background="@color/red"
+                app:cardCornerRadius="100dp"
+                android:backgroundTint="@color/red"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/send"
+                android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/imageViewSend"
+                android:padding="10dp"
+                android:src="@drawable/send"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

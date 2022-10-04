@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textViewCategoria"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/grayText"
+        android:text="PESO MOSCA"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="3dp"
+                android:id="@+id/linearlayout1"
+                android:foreground="?android:selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewVs1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/spiner" />
+
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:minLines="2"
+                        android:maxLines="2"
+                        android:id="@+id/textViewNombrevs1"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="JUNIOR JIMENEZ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/textViewAliarVs1"
+                            android:textColor="#cccc"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="Alias"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/textViewGanadaPerdidasVs1"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:text="20-6-0"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:visibility="gone"
+                android:id="@+id/view1"
+                android:alpha="0.3"
+                android:background="@color/green"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+        </FrameLayout>
+
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="24dp"
+            android:textColor="@color/grayText"
+            android:layout_gravity="center"
+            android:text="VS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <FrameLayout
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="3dp"
+                android:id="@+id/linearlayout2"
+                android:foreground="?android:selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imavieLuchadorvs2"
+                    android:src="@drawable/spiner"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"/>
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/textViewNombrevs2"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:maxLines="2"
+                        android:minLines="2"
+                        android:textColor="@color/white"
+                        android:text="CONOR MACGREGOR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/textViewAliasVs2"
+                            android:textColor="#cccc"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="Alias"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/textViewGanadasVs2"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:text="20-6-0"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:visibility="gone"
+                android:id="@+id/view2"
+                android:alpha="0.3"
+                android:background="@color/red"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+        </FrameLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textiViewGanador"
+            android:textColor="@color/white"
+            android:text="Ganador: JUNIOR JIMENEZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+
+            android:id="@+id/textViewTipo"
+            android:textColor="@color/white"
+            android:text="KO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

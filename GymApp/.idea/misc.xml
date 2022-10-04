@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/drawable/roundedinputs.xml" value="0.1115" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/activity_combates.xml" value="0.23324275362318841" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/activity_crear_versus.xml" value="0.25" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/activity_create_eventos.xml" value="0.18931159420289856" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/activity_create_ultima_pelea.xml" value="0.24592391304347827" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/activity_finalizar_evento.xml" value="0.23324275362318841" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/activity_gym_register.xml" value="0.22" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/activity_home.xml" value="0.23324275362318841" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/activity_list_chats.xml" value="0.1" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/activity_list_luchadores.xml" value="0.12037037037037036" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/activity_luchadores.xml" value="0.33" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/activity_main.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/activity_profile_gym.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/activity_ranking.xml" value="0.21422101449275363" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/activity_result.xml" value="0.21422101449275363" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/activity_secetion_mode_register.xml" value="0.25" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/activity_show_info_pelea.xml" value="0.25" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/fragment_atletas.xml" value="0.23324275362318841" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/fragment_blank.xml" value="0.21422101449275363" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/fragment_clasificaciones.xml" value="0.23324275362318841" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/fragment_desdela_a.xml" value="0.23324275362318841" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/fragment_home.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/fragment_ranking.xml" value="0.2" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/fragment_resultados.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/laoyut_items_luchadores.xml" value="0.33" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/layout_images_items.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/layout_items_combates.xml" value="0.25" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/layout_items_list_luchadores_evento.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/layout_items_mejor_por_regiones.xml" value="0.5" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/layout_items_peleas.xml" value="0.12552083333333333" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/layout_items_peleas_luchador.xml" value="0.12552083333333333" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/layout_items_ranking.xml" value="0.5132127955493742" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/layout_items_regiones.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/layout_items_regiones_seleccionado.xml" value="0.33" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/layout_items_resultados.xml" value="0.33" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/layout_items_resultados_con_fotos.xml" value="0.365625" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/layout_items_resultados_nuevo.xml" value="0.33" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/layout_items_selecionar_versus.xml" value="0.33" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/layout_items_solicitudes.xml" value="0.23324275362318841" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/layout_items_versus.xml" value="0.23324275362318841" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/layout/layout_slider_register.xml" value="0.5" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/menu/header_menu.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/menu/menu.xml" value="0.1" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/menu/menu_admin_peleas.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/menu/menu_peleadores.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/menu/menu_popup.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/menu/menu_versus.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/MC RAZO/AndroidStudioProjects/GymApp/app/src/main/res/menu/popup_menu_gym.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

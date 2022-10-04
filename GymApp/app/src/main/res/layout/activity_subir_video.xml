@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/black"
+    android:backgroundTint="@color/black"
+    tools:context="app.makingfight.gymapp.SubirVideoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:background="@color/black"
+            android:theme="@style/toolbarName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:text="Video"
+            android:layout_height="wrap_content"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <VideoView
+                android:keepScreenOn="true"
+                android:layout_margin="10dp"
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+        </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textViewDuration"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:text="Duracion:02"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/buttonCargarVideo"
+            android:textStyle="italic"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:textColor="#cccc"
+            android:text="CARGAR"
+            android:background="@drawable/roundedinputs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/buttonCargarMiniatura"
+            android:padding="10dp"
+            android:textStyle="italic"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:textColor="#cccc"
+            android:text="CARGAR miniatura"
+            android:background="@drawable/roundedinputs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/roundedinputs"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textColorHint="@color/grayText"
+                app:hintTextColor="@color/grayText"
+                app:placeholderTextColor="@color/white">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/black"
+                    android:hint="Titulo"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/roundedinputs"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textColorHint="@color/grayText"
+                app:hintTextColor="@color/grayText"
+                app:placeholderTextColor="@color/white">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/black"
+                    android:hint="Description"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:foreground="?android:selectableItemBackground"
+        android:clickable="true"
+        android:textColor="@color/grayText"
+        android:text="Subir Video"
+        android:id="@+id/ButtonsubirVideo"
+        android:layout_margin="60dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/roundedinputs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:id="@+id/imageViewMiniatura"
+        android:src="@drawable/imagetow"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

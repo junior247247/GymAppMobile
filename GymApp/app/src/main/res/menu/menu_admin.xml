@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="cerrar sesion" android:id="@+id/cerrarSesionAdmin"/>
+    <item android:title="crear evento" android:id="@+id/creaerEvento"/>
+    <item android:title="crear noticia" android:id="@+id/crearNoticias"/>
+    <item android:title="subir video" android:id="@+id/subirVideo"/>
+    <item android:title="solicitud de cambios" android:id="@+id/solicitudesDeCambios"/>
+</menu>

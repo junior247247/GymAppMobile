@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="" android:icon="@drawable/usuario" android:id="@+id/home" />
+    <item android:title="" android:icon="@drawable/ring" android:id="@+id/result" />
+    <item android:title="" android:icon="@drawable/boxeo1" android:id="@+id/video"/>
+    <item android:title="" android:icon="@drawable/fuego" android:id="@+id/news"/>
+    <item android:title="" android:icon="@drawable/lupa" android:id="@+id/atletas"/>
+
+
+
+</menu>

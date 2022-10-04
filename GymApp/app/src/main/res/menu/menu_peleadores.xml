@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="ver" android:id="@+id/verAtleta"/>
+    <item android:title="eliminar" android:id="@+id/eliminarAtleta"/>
+    <item android:title="actualizar estadisticas" android:id="@+id/updateStadisticas"/>
+
+</menu>

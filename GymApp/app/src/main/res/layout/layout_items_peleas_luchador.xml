@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/carviewPerdida"
+        android:layout_marginRight="10dp"
+
+        android:layout_width="5dp"
+        app:cardCornerRadius="0dp"
+        android:layout_height="match_parent"/>
+<TextView
+android:textStyle="bold"
+    android:id="@+id/textViewLuchador"
+    android:textSize="14dp"
+    android:textColor="@color/white"
+    android:text="JUNIOR JIMENEZ"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textViewFecha"
+        android:textSize="14dp"
+        android:gravity="right"
+        android:text="20/20/2020"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/white"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"/>
+    <ImageButton
+        android:foreground="?android:selectableItemBackground"
+        android:clickable="true"
+        android:id="@+id/imageButtonDoum"
+        android:background="@color/gray"
+            android:src="@drawable/down"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewCollapse"
+        app:cardCornerRadius="0dp"
+        android:backgroundTint="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/hiddenCollapse"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textViewGanadasOponente"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="0 - 0 - 0"
+                    android:layout_weight="1"
+                        android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/textViewGanadasLuchador"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="0 - 0 - 0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textvieTipoEvento"
+                android:text="EVENTO PRINCIPAL"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textViewPeso"
+                    android:text="PESO MOSCA"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/textViewDuracion"
+                    android:text="DURACION: 3 X 3 ROUNDS"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textViewCategoria"
+                    android:text="AMATEUR"
+                    android:textColor="@color/white"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/textViewGano"
+                    android:text="PERDIDA"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewRefetencia"
+                android:text="REFERENCIA: JUAN SOTO"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/black"
+    tools:context=".ProfileGymActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+                <ImageView
+                    android:id="@+id/imageViewPortada"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/making" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="@color/white"
+                    android:id="@+id/circleOImageViewGym"
+                    android:src="@drawable/person"
+
+                    android:layout_marginTop="60dp"
+                    android:layout_gravity="bottom|center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+
+                <TextView
+                    android:paddingRight="8dp"
+                    android:id="@+id/textViewDesdeGym"
+                    android:gravity="left"
+                    android:text="2020 - 2020"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                        android:layout_gravity="bottom"
+                    android:layout_marginBottom="20dp"
+
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingLeft="8dp"
+                    android:id="@+id/textViewLugar"
+                    android:gravity="right"
+                    android:layout_marginRight="5dp"
+                    android:text="HERRERA"
+                    android:maxEms="50"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:maxLines="2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"/>
+
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textViewNameGym"
+                android:layout_marginTop="15dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="WELIN GYM"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"    />
+
+
+            <TextView
+
+                android:layout_marginTop="5dp"
+                android:id="@+id/textViewArtesMarciales"
+                android:textStyle="bold"
+                 android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"
+
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+
+                    android:src="@drawable/facebook"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/textViewFacebook"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="2dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="https://htmlcolorcodes.com/es/"
+                        android:clickable="true"
+                        android:foreground="?actionBarItemBackground"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+                    <View
+                        android:visibility="gone"
+                        android:id="@+id/viewFacebook"
+                        android:background="@color/red"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                    />
+
+                </LinearLayout>
+
+
+
+
+                <ImageView
+                    android:layout_gravity="right"
+                    android:src="@drawable/twitter"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:foreground="?actionBarItemBackground"
+                        android:clickable="true"
+                        android:id="@+id/textViewTwitter"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="2dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="https://htmlcolorcodes.com/es/"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:visibility="gone"
+                        android:id="@+id/viewTwitter"
+                        android:background="@color/red"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/tiktok"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textViewTiktok"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="2dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:clickable="true"
+                        android:foreground="?actionBarItemBackground"
+                        android:text="https://htmlcolorcodes.com/es/"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <View
+                        android:visibility="gone"
+                        android:id="@+id/viewTiktok"
+                        android:background="@color/red"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_gravity="right"
+                    android:src="@drawable/instagram"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:foreground="?actionBarItemBackground"
+                        android:clickable="true"
+                        android:id="@+id/textViewInstagram"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="2dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="https://htmlcolorcodes.com/es/"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <View
+                        android:visibility="gone"
+                        android:id="@+id/viewInstagram"
+                        android:background="@color/red"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+              android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:text="Luchadores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_margin="5dp"
+                android:id="@+id/recicleViewListLuchadores"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:clickable="true"
+        android:foreground="?android:selectableItemBackground"
+        android:id="@+id/btnEditarProfile"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:text="EDITAR"
+        android:layout_gravity="right"
+        android:backgroundTint="@color/black"
+        android:background="@drawable/roundedinputs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

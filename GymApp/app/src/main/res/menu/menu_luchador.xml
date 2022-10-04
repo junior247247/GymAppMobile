@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="cerrar sesion" android:id="@+id/cerrarSesionLuchador"/>
+    <item android:title="solicitar cambio de estadistica" android:id="@+id/solicitarCambioCategoria"/>
+    <item android:title="mi perfil" android:id="@+id/miPerfil"/>
+</menu>

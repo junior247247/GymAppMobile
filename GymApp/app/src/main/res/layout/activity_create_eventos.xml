@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    tools:context="app.makingfight.gymapp.CreateEventosActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:theme="@style/toolbarName"
+                android:background="@color/red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:src="@drawable/foto_portada"
+                android:id="@+id/imageViewEvento"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/roundedinputs"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:textColorHint="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:placeholderTextColor="@color/black">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputNombreDeElEvento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:hint="Nombre del Evento"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/roundedinputs"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:textColorHint="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:placeholderTextColor="@color/black">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputLugarDeElEvento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:hint="Lugar Del Evento"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:text="HORA DE EL EVENTO"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/roundedinputs"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:textColorHint="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:placeholderTextColor="@color/black">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputHoraDeElEvento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:hint="Hora"
+                        android:maxLength="2"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:textColorHint="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:placeholderTextColor="@color/black">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputMinDeElevento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:hint="Min"
+                        android:maxLength="2"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Spinner
+                    android:id="@+id/spinnerDeElEvento"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="60dp"/>
+
+            </LinearLayout>
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp"
+                android:text="HORA DE EL CAREO"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/roundedinputs"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:textColorHint="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:placeholderTextColor="@color/black">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputhoraDeCareo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:hint="Hora"
+                        android:maxLength="2"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:textColorHint="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:placeholderTextColor="@color/black">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputMinDeCareo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:hint="Min"
+                        android:maxLength="2"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Spinner
+                    android:id="@+id/spinnerDeElCareo"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="60dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:text="HORA DE PRIMER COMBATE"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/roundedinputs"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:textColorHint="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:placeholderTextColor="@color/black">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInpurHoraPrimerCombate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:hint="Hora"
+                        android:maxLength="2"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:textColorHint="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:placeholderTextColor="@color/black">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputMinPrimerCombate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:hint="Min"
+                        android:maxLength="2"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Spinner
+                    android:id="@+id/spinnerPrimerCombate"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="60dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:text="FECHA DE EL EVENTO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewFecha"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:padding="20dp"
+                android:text="00/00/0000"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/buttonSelecionarFecha"
+                android:foreground="?android:selectableItemBackground"
+                android:clickable="true"
+                android:text="SELECIONAR"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/roundedinputs"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:text="FECHA DE EL LIMITE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textViewFechaLimite"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:padding="20dp"
+                    android:text="00/00/0000"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:id="@+id/buttonSelecionarFechalIMITE"
+                    android:foreground="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:text="SELECIONAR"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/roundedinputs"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+    <TextView
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="CATEOGRIA DE EL EVENTO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textViewCategoria"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:text="----------"
+                    android:padding="20dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:id="@+id/buttonSelecionarCategoriaDeElEvento"
+                    android:layout_margin="10dp"
+                    android:text="SELECIONAR"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/roundedinputs"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/roundedinputs"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:textColorHint="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:placeholderTextColor="@color/black">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputPremios"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/black"
+                        android:hint="Premios"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewReglas"
+                android:padding="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="REGLAS"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+
+                <Button
+                    android:id="@+id/buttonReglas"
+                    android:background="@drawable/roundedinputs"
+                    android:text="SELECIONAR"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonCrearEvento"
+                android:textColor="@color/white"
+                android:layout_margin="20dp"
+                android:background="@drawable/roundedinputs"
+                android:text="CREAR EVENTO"
+                android:backgroundTint="@color/red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

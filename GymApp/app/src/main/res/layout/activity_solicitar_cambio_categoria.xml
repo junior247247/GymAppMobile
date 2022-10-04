@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/black"
+    tools:context="app.makingfight.gymapp.SolicitarCambioCategoriaActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:theme="@style/toolbarName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:textColor="@color/white"
+            android:id="@+id/editextMessge"
+            android:textColorHint="@color/white"
+            android:hint="¿ CUALES ESTADISTICAS QUIERES ACTUALIZAR ?"
+            android:padding="15dp"
+            android:textSize="12dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/roundedinputs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:clickable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:id="@+id/buttonSolicitarCambio"
+            android:text="SOLICITAR CAMBIO"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:background="@drawable/roundedinputs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

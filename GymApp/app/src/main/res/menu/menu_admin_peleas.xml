@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="mostrar" android:id="@+id/mostrar"  />
+    <item android:title="editar" android:id="@+id/editar"/>
+    <item android:title="eliminar" android:id="@+id/eliminar"/>
+    <item android:title="Finalizar evento" android:id="@+id/finalizarEvento"/>
+</menu>

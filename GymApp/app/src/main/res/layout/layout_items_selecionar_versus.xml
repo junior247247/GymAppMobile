@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/gray"
+    android:layout_margin="3dp"
+    android:clickable="true"
+    android:foreground="?selectableItemBackground"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout1Clcik"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linearlayout1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="90dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/spiner" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewNombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JUNIOR JIMENEZ"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewAlias"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Alias"
+                            android:textColor="#cccc" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/textViewGanadaPerdidas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20-6-0"
+                        android:textColor="@color/white" />
+
+
+                    <TextView
+                        android:id="@+id/textViewCategoria"
+                        android:textStyle="bold"
+
+                        android:textColor="@color/grayText"
+                        android:text="PESO MOSCA"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/view"
+        android:alpha="0.5"
+        android:visibility="gone"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

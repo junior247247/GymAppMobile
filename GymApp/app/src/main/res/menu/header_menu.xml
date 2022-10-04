@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single" android:id="@+id/primaryGroup">
+        <item android:title="Reseñas" android:id="@+id/resena" android:icon="@android:drawable/ic_dialog_email"/>
+        <item android:title="Chats" android:id="@+id/chat" android:icon="@drawable/ic_msj"/>
+
+    </group>
+</menu>

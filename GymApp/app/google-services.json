@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "287180752781",
+    "project_id": "making-eb3e6",
+    "storage_bucket": "making-eb3e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287180752781:android:70eb0440162c5e81049fc4",
+        "android_client_info": {
+          "package_name": "app.makingfight.gymapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "287180752781-jv222msum9traa2pejkqpslsgoevte16.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.makingfight.gymapp",
+            "certificate_hash": "34b2ec5388fa31185ed565cfdbaf89a5f713c868"
+          }
+        },
+        {
+          "client_id": "287180752781-064nh5mh4r02k08bsoba64j4ubglaejr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgtzzIew0F66y8tUTj3QSIe0sgVnfYrNg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "287180752781-064nh5mh4r02k08bsoba64j4ubglaejr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

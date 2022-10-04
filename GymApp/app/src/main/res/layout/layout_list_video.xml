@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="15dp"
+    android:clickable="true"
+    android:foreground="?android:selectableItemBackground"
+    android:layout_width="match_parent"
+    android:background="@color/gray"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            tools:ignore="Suspicious0dp">
+
+            <ImageView
+                android:id="@+id/imageViewvideoImage"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/ww1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_play" />
+
+            <View
+                android:id="@+id/viewPlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.2"
+                android:background="@color/black" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/textViewTittleVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="Roman Reings"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/textViewDescriptionVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="Lorem ipsum dolor sit amectetur
+                 adipiscing elit. Maecenas mollis est sed
+                 a
+                 ....."
+                android:textSize="12dp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:textSize="12dp"
+        android:textColor="#cccc"
+        android:id="@+id/textViewTimeVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="2dp"
+        android:gravity="right|bottom"
+        android:text="20:00 min" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

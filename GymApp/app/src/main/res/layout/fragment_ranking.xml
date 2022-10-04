@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:background="@color/black">
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:clickable="true"
+            android:foreground="?selectableItemBackground"
+            android:id="@+id/linearLayoutCategorias"
+            android:layout_margin="15dp"
+            android:background="@color/gray"
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewCategoria"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp"
+                android:textColor="@color/grayText"
+                android:textStyle="italic"
+                android:text="MADRID"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/imageViewShowBottom"
+                android:src="@drawable/homeandroid"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/roundendinputlogin"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:textColorHint="@color/grayText"
+                app:hintTextColor="@color/grayText"
+                app:placeholderTextColor="@color/grayText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:id="@+id/textInputBuscars"
+                    android:backgroundTint="@color/white"
+                    android:hint="Buscar"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:foreground="?android:selectableItemBackground"
+                android:clickable="true"
+                android:src="@drawable/search"
+                android:id="@+id/buttonbuscars"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:padding="10dp"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:text="BUSCAR"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:id="@+id/recicleViewRanking"
+    android:layout_height="match_parent"/>
+
+
+</LinearLayout>

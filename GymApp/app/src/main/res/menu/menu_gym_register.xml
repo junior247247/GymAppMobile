@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/cerrarSesion" android:title="cerrar sesion" app:showAsAction="never"/>
+    <item android:id="@+id/agregarLuchadores" android:title="agregar luchadores" app:showAsAction="never"/>
+    <item android:id="@+id/miLIstadeLuchadores" android:title="mi lista de luchadores" app:showAsAction="never"/>
+    <item android:id="@+id/miPerfilGym" android:title="mi perfil"/>
+</menu>
